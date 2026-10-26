@@ -1,0 +1,33 @@
+{
+  "baseline": "GamePad PS V0.4.1",
+  "approvedOn": "2026-10-21",
+  "userApproval": "标记为V0.4.1基线吧",
+  "status": "user-approved-baseline-with-recorded-verification-limit",
+  "package": "com.gamepad.pspad",
+  "versionName": "0.4.1",
+  "versionCode": 8,
+  "apk": "GamePad-PS-V0.4.1.apk",
+  "apkSha256": "7ac5df49b1089ea7bd67e7233db8103dfdb9a3c40cc99c52d5057973354415c5",
+  "installedBinaryMatches": true,
+  "source": {
+    "baseArchive": "../GamePad-PS-V0.4/source/GamePad-PS-V0.4-source.tar.gz",
+    "baseSha256": "1d0a8ea42add3f0b6366fb1f8aef20faeb063a567b955acee7c5688f7e3d1c3e",
+    "overlayArchive": "source/GamePad-PS-V0.4.1-source-delta.tar.gz",
+    "overlaySha256": "ea6e93b73c3eb375dd7c4dffede7b8672bff33f3c09478f25d72813660fc193e",
+    "manifest": "source/source-delta.json",
+    "restore": "Extract the V0.4 full source, then extract the V0.4.1 overlay over it. No source deletions."
+  },
+  "unitTests": {
+    "tests": 208,
+    "failures": 0,
+    "errors": 0
+  },
+  "validation": "evidence/validation.json",
+  "limitations": [
+    "Controller regression injects Android key events; full physical-controller hardware acceptance remains manual.",
+    "No extended performance/gameplay acceptance beyond the scoped checks.",
+    "Last change only guards against delayed initial-focus override; built and installed, but its final end-to-end smoke was stopped because log confirmation was unavailable. Prior runtime checks cover the preceding candidate."
+  ],
+  "priorBaselinePreserved": true,
+  "deviceDataIncluded": false
+}

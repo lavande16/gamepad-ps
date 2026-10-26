@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <color name="pixel_text_light">#FBFAF7</color>
+  <color name="gamefold_splash_background">#15161A</color>
+  <string name="gamefold_unsupported_mode">This device posture is not supported. Unfold the phone to full screen.</string>
+  <color name="pixel_border_ink">#787370</color>
+  <declare-styleable name="PixelWordmarkView">
+    <attr name="pixelShadowEnabled" format="boolean" />
+    <attr name="pixelWordmarkColor" format="color" />
+    <attr name="pixelWordmarkBold" format="boolean" />
+    <attr name="pixelWordmarkSize" format="dimension" />
+  </declare-styleable>
+  <fraction name="carousel_midscreenswipe_width_fraction">20%</fraction>
+  <item name="gamefold_display_stage" type="id" />
+  <style name="GameFoldPixel.Text" parent="">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">@color/pixel_text_dark</item>
+    <item name="android:textSize">@dimen/pixel_text_body</item>
+  </style>
+  <style name="GameFoldPixel.Text.Title" parent="GameFoldPixel.Text">
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textSize">@dimen/pixel_text_title</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  <style name="GameFoldPixel.Text.Label" parent="GameFoldPixel.Text">
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:textSize">@dimen/pixel_text_label</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+  <style name="GameFoldPixel.Text.Caption" parent="GameFoldPixel.Text">
+    <item name="android:textSize">@dimen/pixel_text_caption</item>
+  </style>
+  <style name="GameFoldPixel.Text.Numeric" parent="GameFoldPixel.Text.Label">
+    <item name="android:fontFamily">monospace</item>
+    <item name="android:fontFeatureSettings">tnum</item>
+  </style>
+  <style name="GameFoldPixel.Button" parent="Widget.Material3.Button">
+    <item name="android:layout_height">@dimen/pixel_button_height</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:minWidth">@dimen/pixel_touch_target</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:gravity">center</item>
+    <item name="android:outlineAmbientShadowColor">@color/pixel_border_ink</item>
+    <item name="android:outlineSpotShadowColor">@color/pixel_border_ink</item>
+    <item name="android:paddingStart">@dimen/pixel_space_md</item>
+    <item name="android:paddingEnd">@dimen/pixel_space_md</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">@color/pixel_button_text_color</item>
+    <item name="android:textSize">@dimen/pixel_text_label</item>
+    <item name="android:textStyle">bold</item>
+    <item name="backgroundTint">@color/pixel_surface_slate</item>
+    <item name="cornerRadius">0dp</item>
+    <item name="elevation">4dp</item>
+    <item name="rippleColor">@color/pixel_focus</item>
+    <item name="strokeColor">@color/pixel_border_ink</item>
+    <item name="strokeWidth">2dp</item>
+  </style>
+  <style name="GameFoldPixel.Button.Danger" parent="GameFoldPixel.Button">
+    <item name="android:textColor">@color/pixel_text_light</item>
+    <item name="backgroundTint">@color/pixel_danger</item>
+    <item name="iconTint">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.Button.Action" parent="GameFoldPixel.Button">
+    <item name="android:textColor">@color/pixel_text_light</item>
+    <item name="android:outlineAmbientShadowColor">@color/pixel_action_shadow</item>
+    <item name="android:outlineSpotShadowColor">@color/pixel_action_shadow</item>
+    <item name="backgroundTint">@color/pixel_action</item>
+    <item name="iconTint">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.Panel" parent="">
+    <item name="android:background">@drawable/pixel_panel_background</item>
+    <item name="android:padding">@dimen/pixel_space_md</item>
+  </style>
+  <style name="GameFoldPixel.ContentPage" parent="">
+    <item name="android:background">@color/pixel_home_surface</item>
+  </style>
+  <style name="GameFoldPixel.SectionTitle" parent="GameFoldPixel.Text.Label">
+    <item name="android:background">@drawable/pixel_section_header_background</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingStart">@dimen/pixel_space_md</item>
+    <item name="android:paddingEnd">@dimen/pixel_space_md</item>
+    <item name="android:textColor">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.Card.Outlined" parent="Widget.Material3.CardView.Outlined">
+    <item name="cardBackgroundColor">@color/pixel_surface_slate</item>
+    <item name="cardCornerRadius">0dp</item>
+    <item name="cardElevation">0dp</item>
+    <item name="strokeColor">@color/pixel_border_ink</item>
+    <item name="strokeWidth">2dp</item>
+  </style>
+  <style name="GameFoldPixel.DialogPanel" parent="GameFoldPixel.Panel">
+    <item name="android:background">@drawable/pixel_dialog_background</item>
+    <item name="android:minWidth">@dimen/pixel_dialog_min_width</item>
+    <item name="android:padding">@dimen/pixel_space_lg</item>
+  </style>
+  <style name="GameFoldPixel.ListItem" parent="">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:minHeight">@dimen/pixel_list_item_height</item>
+    <item name="android:background">@drawable/pixel_list_item_background</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingStart">@dimen/pixel_space_md</item>
+    <item name="android:paddingEnd">@dimen/pixel_space_md</item>
+  </style>
+  <style name="GameFoldPixel.Toolbar" parent="Widget.Material3.Toolbar">
+    <item name="android:background">@color/pixel_surface_slate_dark</item>
+    <item name="android:elevation">0dp</item>
+    <item name="android:minHeight">@dimen/pixel_toolbar_height</item>
+    <item name="contentInsetStartWithNavigation">0dp</item>
+    <item name="contentInsetStart">8dp</item>
+    <item name="contentInsetEnd">8dp</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="navigationIconTint">@color/pixel_text_dark</item>
+    <item name="titleTextColor">@color/pixel_text_dark</item>
+    <item name="android:textColor">@color/pixel_text_dark</item>
+    <item name="titleTextAppearance">@style/GameFoldPixel.Text.Title</item>
+  </style>
+  <style name="GameFoldPixel.Text.Title.Light" parent="GameFoldPixel.Text.Title">
+    <item name="android:textColor">@color/pixel_text_light</item>
+    <item name="android:textSize">20sp</item>
+  </style>
+  <style name="GameFoldPixel.Text.Secondary" parent="GameFoldPixel.Text">
+    <item name="android:textColor">@color/pixel_text_secondary</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+  <style name="GameFoldPixel.Text.Value" parent="GameFoldPixel.Text.Numeric">
+    <item name="android:textColor">@color/pixel_text_secondary</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+  <style name="GameFoldPixel.Text.Value.Light" parent="GameFoldPixel.Text.Value">
+    <item name="android:textColor">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.ImageIconButton" parent="">
+    <item name="android:layout_width">@dimen/pixel_touch_target</item>
+    <item name="android:layout_height">@dimen/pixel_touch_target</item>
+    <item name="android:minWidth">@dimen/pixel_touch_target</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:background">@drawable/pixel_button_background</item>
+    <item name="android:backgroundTint">@null</item>
+    <item name="android:padding">12dp</item>
+    <item name="android:scaleType">centerInside</item>
+    <item name="android:tint">@color/pixel_text_dark</item>
+    <item name="android:stateListAnimator">@null</item>
+  </style>
+  <style name="GameFoldPixel.ImageIconButton.Action" parent="GameFoldPixel.ImageIconButton">
+    <item name="android:background">@drawable/pixel_action_button_background</item>
+    <item name="android:tint">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.MaterialLayerIconButton" parent="Widget.Material3.Button">
+    <item name="android:layout_width">@dimen/pixel_touch_target</item>
+    <item name="android:layout_height">@dimen/pixel_touch_target</item>
+    <item name="android:minWidth">@dimen/pixel_touch_target</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:background">@drawable/pixel_button_background</item>
+    <item name="android:backgroundTint">@null</item>
+    <item name="backgroundTint">@null</item>
+    <item name="android:padding">12dp</item>
+    <item name="iconGravity">textStart</item>
+    <item name="iconPadding">0dp</item>
+    <item name="iconTint">@color/pixel_text_dark</item>
+    <item name="android:stateListAnimator">@null</item>
+  </style>
+  <style name="GameFoldPixel.MaterialLayerIconButton.Action" parent="GameFoldPixel.MaterialLayerIconButton">
+    <item name="android:background">@drawable/pixel_action_button_background</item>
+    <item name="iconTint">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.MaterialIconButton" parent="Widget.Material3.Button">
+    <item name="android:layout_width">@dimen/pixel_touch_target</item>
+    <item name="android:layout_height">@dimen/pixel_touch_target</item>
+    <item name="android:minWidth">@dimen/pixel_touch_target</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="backgroundTint">@color/pixel_surface_slate</item>
+    <item name="cornerRadius">0dp</item>
+    <item name="iconGravity">textStart</item>
+    <item name="iconPadding">0dp</item>
+    <item name="iconTint">@color/pixel_text_dark</item>
+    <item name="rippleColor">@color/pixel_focus</item>
+    <item name="strokeColor">@color/pixel_border_ink</item>
+    <item name="strokeWidth">2dp</item>
+  </style>
+  <style name="GameFoldPixel.Button.Compact" parent="GameFoldPixel.Button">
+    <item name="android:layout_height">@dimen/pixel_touch_target</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+  <style name="GameFoldPixel.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+    <item name="android:layout_width">@dimen/pixel_switch_width</item>
+    <item name="android:layout_height">@dimen/pixel_touch_target</item>
+    <item name="android:minWidth">@dimen/pixel_switch_width</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:thumb">@drawable/pixel_switch_thumb</item>
+    <item name="showText">false</item>
+    <item name="switchMinWidth">@dimen/pixel_switch_width</item>
+    <item name="track">@drawable/pixel_switch_track</item>
+  </style>
+  <style name="GameFoldPixel.Slider" parent="Widget.Material3.Slider">
+    <item name="haloColor">@color/pixel_transparent</item>
+    <item name="haloRadius">0dp</item>
+    <item name="thumbColor">@color/pixel_focus</item>
+    <item name="thumbRadius">8dp</item>
+    <item name="tickVisible">false</item>
+    <item name="trackColorActive">@color/pixel_focus</item>
+    <item name="trackColorInactive">@color/pixel_surface_slate_dark</item>
+    <item name="trackHeight">8dp</item>
+  </style>
+  <style name="GameFoldPixel.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+    <item name="boxBackgroundColor">@color/pixel_surface_slate</item>
+    <item name="boxCornerRadiusBottomEnd">0dp</item>
+    <item name="boxCornerRadiusBottomStart">0dp</item>
+    <item name="boxCornerRadiusTopEnd">0dp</item>
+    <item name="boxCornerRadiusTopStart">0dp</item>
+    <item name="boxStrokeColor">@color/pixel_input_stroke_color</item>
+    <item name="boxStrokeWidth">2dp</item>
+    <item name="boxStrokeWidthFocused">4dp</item>
+    <item name="hintTextColor">@color/pixel_text_secondary</item>
+  </style>
+  <style name="GameFoldPixel.EditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:textColor">@color/pixel_text_dark</item>
+    <item name="android:textColorHint">@color/pixel_text_secondary</item>
+    <item name="android:textSize">@dimen/pixel_text_body</item>
+  </style>
+  <style name="GameFoldPixel.ShapeAppearance" parent="">
+    <item name="cornerFamily">cut</item>
+    <item name="cornerSize">0dp</item>
+  </style>
+  <style name="GameFoldPixel.DialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:paddingStart">@dimen/pixel_space_md</item>
+    <item name="android:paddingEnd">@dimen/pixel_space_md</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">@color/pixel_text_dark</item>
+    <item name="android:textStyle">bold</item>
+    <item name="backgroundTint">@color/pixel_surface_slate</item>
+    <item name="cornerRadius">0dp</item>
+    <item name="rippleColor">@color/pixel_focus</item>
+    <item name="strokeColor">@color/pixel_border_ink</item>
+    <item name="strokeWidth">2dp</item>
+  </style>
+  <style name="GameFoldPixel.DialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+    <item name="android:colorBackground">@color/pixel_surface_slate</item>
+    <item name="android:textColorPrimary">@color/pixel_text_dark</item>
+    <item name="android:textColorSecondary">@color/pixel_text_secondary</item>
+    <item name="colorPrimary">@color/pixel_action</item>
+    <item name="colorOnPrimary">@color/pixel_text_light</item>
+    <item name="colorOnSurface">@color/pixel_text_dark</item>
+    <item name="colorOutline">@color/pixel_border_ink</item>
+    <item name="colorSurface">@color/pixel_surface_slate</item>
+    <item name="backgroundInsetStart">0dp</item>
+    <item name="backgroundInsetEnd">0dp</item>
+    <item name="backgroundInsetTop">0dp</item>
+    <item name="backgroundInsetBottom">0dp</item>
+    <item name="shapeAppearanceMediumComponent">@style/GameFoldPixel.ShapeAppearance</item>
+    <item name="buttonBarPositiveButtonStyle">@style/GameFoldPixel.DialogButton</item>
+    <item name="buttonBarNegativeButtonStyle">@style/GameFoldPixel.DialogButton</item>
+    <item name="buttonBarNeutralButtonStyle">@style/GameFoldPixel.DialogButton</item>
+  </style>
+  <style name="GameFoldPixel.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+    <item name="android:background">@drawable/pixel_dialog_background</item>
+    <item name="backgroundTint">@color/pixel_surface_slate</item>
+    <item name="shapeAppearance">@style/GameFoldPixel.ShapeAppearance</item>
+    <item name="shapeAppearanceOverlay">@style/GameFoldPixel.ShapeAppearance</item>
+  </style>
+  <style name="GameFoldPixel.BottomSheetDialogTheme" parent="ThemeOverlay.Material3.BottomSheetDialog">
+    <item name="android:colorBackground">@color/pixel_surface_slate</item>
+    <item name="bottomSheetStyle">@style/GameFoldPixel.BottomSheet</item>
+    <item name="colorOnSurface">@color/pixel_text_dark</item>
+    <item name="colorSurface">@color/pixel_surface_slate</item>
+    <item name="shapeAppearanceMediumComponent">@style/GameFoldPixel.ShapeAppearance</item>
+  </style>
+  <style name="GameFoldPixel.AppBar" parent="Widget.Material3.AppBarLayout">
+    <item name="android:background">@color/pixel_surface_slate_dark</item>
+    <item name="android:elevation">0dp</item>
+    <item name="elevation">0dp</item>
+  </style>
+  <style name="GameFoldPixel.Text.Light" parent="GameFoldPixel.Text">
+    <item name="android:textColor">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.Text.Label.Light" parent="GameFoldPixel.Text.Label">
+    <item name="android:textColor">@color/pixel_text_light</item>
+  </style>
+  <style name="GameFoldPixel.Card" parent="Widget.Material3.CardView.Filled">
+    <item name="android:background">@drawable/pixel_list_item_background</item>
+    <item name="cardBackgroundColor">@color/pixel_transparent</item>
+    <item name="cardCornerRadius">0dp</item>
+    <item name="cardElevation">0dp</item>
+    <item name="strokeWidth">0dp</item>
+  </style>
+  <style name="GameFoldPixel.ActionButton" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+    <item name="android:minHeight">@dimen/pixel_touch_target</item>
+    <item name="android:minWidth">@dimen/pixel_touch_target</item>
+    <item name="android:outlineAmbientShadowColor">@color/pixel_action_shadow</item>
+    <item name="android:outlineSpotShadowColor">@color/pixel_action_shadow</item>
+    <item name="android:textColor">@color/pixel_text_light</item>
+    <item name="backgroundTint">@color/pixel_action</item>
+    <item name="cornerRadius">0dp</item>
+    <item name="elevation">4dp</item>
+    <item name="iconTint">@color/pixel_text_light</item>
+    <item name="rippleColor">@color/pixel_focus</item>
+    <item name="strokeColor">@color/pixel_border_ink</item>
+    <item name="strokeWidth">2dp</item>
+  </style>
+  <color name="gamefold_icon_background">#202125</color>
+  <color name="gamefold_splash_wordmark_shadow">#08090B</color>
+  <color name="pixel_background_deep">#252429</color>
+  <color name="pixel_background_moss">#C4EA72</color>
+  <color name="pixel_background_moss_light">#F2F1ED</color>
+  <color name="pixel_surface_slate">#FBFAF7</color>
+  <color name="pixel_surface_slate_dark">#E2DED8</color>
+  <color name="pixel_surface_slate_pressed">#D8D2CA</color>
+  <color name="pixel_text_dark">#1B1C1D</color>
+  <color name="pixel_text_secondary">#68635F</color>
+  <color name="pixel_focus">#6D8F9C</color>
+  <color name="pixel_focus_glow">#D7E7EB</color>
+  <color name="pixel_action">#B65454</color>
+  <color name="pixel_magenta">#B65454</color>
+  <color name="pixel_action_pressed">#8F4040</color>
+  <color name="pixel_action_shadow">#6F3636</color>
+  <color name="pixel_resize">#B9DDE8</color>
+  <color name="pixel_resize_shadow">#789EAA</color>
+  <color name="pixel_section_header">#5E5A57</color>
+  <color name="pixel_danger">#B65454</color>
+  <color name="pixel_warning">#B65454</color>
+  <color name="pixel_panel_shadow">#5E5A57</color>
+  <color name="pixel_disabled_surface">#DDD8D1</color>
+  <color name="pixel_disabled_text">#9A948E</color>
+  <color name="pixel_scrim">#991B1C1D</color>
+  <color name="pixel_transparent">#00000000</color>
+  <color name="pixel_home_surface">#F2F1ED</color>
+  <color name="pixel_home_text">#1B1C1D</color>
+  <color name="pixel_cartridge_shell">#D8D4CE</color>
+  <color name="pixel_cartridge_shell_shadow">#8A8783</color>
+  <color name="pixel_cartridge_border">#787370</color>
+  <color name="pixel_cartridge_highlight">#F0ECE7</color>
+  <color name="pixel_cartridge_inner">#B9B5B0</color>
+  <dimen name="pixel_unit">2dp</dimen>
+  <dimen name="pixel_border">2dp</dimen>
+  <dimen name="pixel_border_focus">4dp</dimen>
+  <dimen name="pixel_shadow_offset">4dp</dimen>
+  <dimen name="pixel_space_xs">4dp</dimen>
+  <dimen name="pixel_space_sm">8dp</dimen>
+  <dimen name="pixel_space_md">16dp</dimen>
+  <dimen name="fps_overlay_margin_horizontal">22dp</dimen>
+  <dimen name="fps_overlay_margin_vertical">20dp</dimen>
+  <dimen name="pixel_space_lg">24dp</dimen>
+  <dimen name="pixel_space_xl">32dp</dimen>
+  <dimen name="pixel_touch_target">48dp</dimen>
+  <dimen name="pixel_toolbar_height">44dp</dimen>
+  <dimen name="pixel_button_height">56dp</dimen>
+  <dimen name="pixel_list_item_height">64dp</dimen>
+  <dimen name="pixel_icon_sm">16dp</dimen>
+  <dimen name="pixel_icon_md">24dp</dimen>
+  <dimen name="pixel_icon_lg">32dp</dimen>
+  <dimen name="pixel_text_caption">12sp</dimen>
+  <dimen name="pixel_text_body">16sp</dimen>
+  <dimen name="pixel_text_label">16sp</dimen>
+  <dimen name="pixel_text_title">24sp</dimen>
+  <dimen name="pixel_text_display">32sp</dimen>
+  <dimen name="pixel_dialog_min_width">280dp</dimen>
+  <dimen name="pixel_dialog_max_width">480dp</dimen>
+  <dimen name="pixel_progress_height">16dp</dimen>
+  <dimen name="pixel_switch_width">56dp</dimen>
+  <dimen name="pixel_switch_height">32dp</dimen>
+  <string name="gamefold_home_brand_name" translatable="false">GAMEPAD PS</string>
+  <string name="gamefold_dual_screen_toggle">Turn rear-screen controls on or off</string>
+  <string name="gamepad_resize_toggle">Switch display resolution</string>
+  <string name="home_settings">Settings</string>
+  <string name="empty_gamelist">No files were found or no game directory has been selected yet.</string>
+  <string name="quick_start">Quick start</string>
+  <string name="gamefold_orientation_toggle">Switch screen orientation</string>
+  <string name="quick_start_instructions">• D-pad or left stick: move selection\n• A / X: confirm\n• B / Y: back or cancel\n• Long-press the left or right stick: trigger L3 or R3 respectively\n• Long-press a game cover: open its settings\n• Tap GAMEPAD NS: return home; a running game stays paused\n• In a game, each button follows the game’s custom mapping</string>
+  <string name="qlaunch_applet">Qlaunch</string>
+  <style name="Widget.Eden.TransparentTopAppBarLayout" parent="">
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:elevation">0dp</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="elevation">0dp</item>
+    <item name="liftOnScroll">false</item>
+    <item name="statusBarForeground">@android:color/transparent</item>
+  </style>
+  <string name="preferences_settings">Settings</string>
+  <color name="eden_card_background">#F0F0F0</color>
+  <style name="SynthwaveText.Body" parent="TextAppearance.Material3.BodyLarge">
+    <item name="android:textColor">@color/eden_on_background</item>
+    <item name="android:fontFamily">monospace</item>
+    <item name="android:letterSpacing">0.02</item>
+  </style>
+  <color name="eden_border">#7c757f</color>
+  <string name="game_image_desc">Screenshot for %1$s</string>
+  <style name="ShapeAppearance.Eden.CarouselImage" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopLeft">8dp</item>
+    <item name="cornerSizeTopRight">8dp</item>
+    <item name="cornerSizeBottomLeft">0dp</item>
+    <item name="cornerSizeBottomRight">0dp</item>
+  </style>
+  <dimen name="spacing_small">4dp</dimen>
+  <string name="app_disclaimer">This software will run games for the Nintendo Switch game console. No game titles or keys are included.&lt;br /&gt;&lt;br /&gt;Before you begin, please locate your &lt;b&gt; prod.keys &lt;/b&gt; file on your device storage.&lt;br /&gt;&lt;br /&gt;&lt;a href=\"https://yuzu-mirror.github.io/help/quickstart\"&gt;Learn more&lt;/a&gt;</string>
+  <string name="use_global_setting">Use global setting</string>
+  <string name="frame_limit_enable">Limit speed</string>
+  <string name="frame_limit_enable_description">Limits emulation speed to a specified percentage of normal speed.</string>
+  <string name="generate">Generate</string>
+  <string name="decrement">Decrement</string>
+  <string name="increment">Increment</string>
+  <string name="license_adreno_tools" translatable="false">Adreno Tools</string>
+  <string name="license_adreno_tools_link" translatable="false">https://github.com/bylaws/libadrenotools</string>
+  <string name="license_adreno_tools_copyright" translatable="false">Copyright © 2021, Billy Laws</string>
+  <string name="license_adreno_tools_text" translatable="false">
+BSD 2-Clause License\n\n
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:\n\n
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.\n\n
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.\n\n
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    </string>
+  <string name="emulation_exit">Exit emulation</string>
+  <string name="emulation_exit_prompt">Exit the current game?</string>
+  <string name="continue_button">Continue</string>
+  <string name="install_prod_keys">Install prod.keys</string>
+  <string name="install_prod_keys_description">Required to decrypt retail games</string>
+  <color name="eden_on_background">#000000</color>
+</resources>

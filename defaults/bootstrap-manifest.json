@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "product": "GamePad PS",
+  "rootDirectoryName": "GamePad PS",
+  "directories": [
+    "BIOS",
+    "LSFG",
+    "game",
+    "Settings"
+  ],
+  "bios": {
+    "directory": "BIOS",
+    "preferredFile": "SCPH-10000.BIN"
+  },
+  "lsfg": {
+    "file": "LSFG/Lossless.dll",
+    "sha256": "626b196d799606cd4250b7b29e04228692ab70cf56a5d1bbb56d748c8219f0eb",
+    "bytes": 7521280,
+    "sourcePath": "/storage/emulated/0/GamePadPC/lsfg/inputtest/Lossless.dll"
+  },
+  "games": {
+    "SLPS-25837": {
+      "directory": "game/究极觉醒2",
+      "isoDirectory": "ISO",
+      "memoryCardDirectory": "Memcards",
+      "saveStateDirectory": "Sstates",
+      "sourceCRC": "B576177F"
+    }
+  },
+  "policies": {
+    "externalDisplayEnabled": false,
+    "retainGamePadControllerAppearance": true,
+    "applyDefaults": "first-initialization-only",
+    "keepUserOverrides": true,
+    "overwriteMemoryCardsOnLaunch": false,
+    "isoAccess": "read-in-place",
+    "referenceTouchSettings": "archived-only"
+  },
+  "pathVariables": {
+    "ROOT": "resolved authorized GamePad PS directory"
+  },
+  "status": "defaults-prepared-runtime-integration-not-implemented"
+}

@@ -1,0 +1,21 @@
+<resources>
+  <string name="gamefold_assembly_eyebrow_permission">自动装配</string>
+  <string name="gamefold_assembly_grant_permission">授权访问</string>
+  <string name="gamefold_assembly_permission_detail">将 BIOS、插帧文件、游戏和存档放入 GamePadPS 文件夹。</string>
+  <string name="gamefold_assembly_permission_title">准备游戏材料</string>
+  <string name="gamefold_assembly_retry">重新检查</string>
+  <string name="gamefold_assembly_source_path">内部存储 / GamePadPS</string>
+  <string name="gamefold_download" />
+  <string name="gamefold_mtk_fc_link" />
+  <string name="gamefold_open_website">查看说明</string>
+  <style name="Theme.GamePadPS.Assembly" parent="Theme.Material3.Light.NoActionBar">
+    <item name="android:windowFullscreen">true</item>
+    <item name="materialAlertDialogTheme">@style/GameFoldPixel.DialogTheme</item>
+    <item name="colorPrimary">@color/pixel_action</item>
+    <item name="android:windowBackground">@color/pixel_background_moss_light</item>
+  </style>
+  <dimen name="gamepad_ps_cartridge_artwork_inset">3dp</dimen>
+  <string name="gamepad_ps_cover">游戏封面</string>
+  <string name="gamepad_ps_start">开始</string>
+  <color name="gamepad_ps_icon_ink">#3C3C3C</color>
+</resources>

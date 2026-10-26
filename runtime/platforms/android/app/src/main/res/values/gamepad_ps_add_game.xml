@@ -1,0 +1,5 @@
+<resources>
+<string name="close">关闭</string>
+<string name="gamefold_no_games_title">添加游戏</string>
+<string name="gamefold_no_games_detail">请将游戏文件放入内部存储 /GamePadPS/game，返回首页下拉刷新即可添加。</string>
+</resources>
