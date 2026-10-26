@@ -1,5 +1,69 @@
 # GamePad PS
 
+> **把 PS2 游戏库，带进随身的 Android 游戏空间。**  
+> Bring your PS2 library into a handheld Android play space.
+
+<p align="center"><a href="https://gamefold.pages.dev"><img src="https://gamefold.pages.dev/assets/product/fold-gameplay.webp" alt="GameFold 折叠屏游戏体验视觉" width="88%"></a></p>
+<p align="center"><sub>GameFold 产品家族视觉｜GameFold family artwork · GamePad PS 暂无独立官网，暂用家族官网介绍品牌。</sub></p>
+
+<p align="center"><a href="https://gamefold.pages.dev">产品官网 / Official site</a> · <a href="https://github.com/lavande16/gamepad-ps-private/releases/tag/gamepad-ps-v0.4.1-8-baseline">下载 V0.4.1 / Download</a> · <a href="#product-family">GameFold 产品矩阵 / Product family</a></p>
+
+## 当前基线 · Current baseline
+
+| 项目 | 信息 |
+|---|---|
+| 基线版本 | **GamePad PS V0.4.1 · versionCode 8** |
+| Android 包名 | **com.gamepad.pspad** |
+| 方向与显示 | 横屏游玩；默认 4× 渲染、LGFS 2×、Stretch 全屏、OSD 关闭 |
+| 存储目录 | **GamePadPS** |
+| 下载 | [GitHub Release：V0.4.1 / 8](https://github.com/lavande16/gamepad-ps-private/releases/tag/gamepad-ps-v0.4.1-8-baseline) |
+
+## 为玩家准备的体验 · Made for players
+
+- **整洁的游戏入口：**以卡带式游戏库进入 PS2 游戏，支持自动装配与自动存档读档流程。  
+  **A focused library:** launch through a cartridge-inspired collection with automatic game setup and save/load flow.
+- **横屏掌机布局：**以横屏作为主要游玩方向，按掌机握持方式呈现控制与内容。  
+  **Landscape first:** controls and content are arranged for a handheld grip.
+- **适配性能的图像默认值：**提供统一的渲染、LGFS 与画面比例初始设置；首次初始化时应用，保留之后玩家自己的修改与进度。  
+  **Practical graphics defaults:** rendering, LGFS and aspect settings are initialized once, while later preferences and progress are preserved.
+- **灵活导入自己的游戏：**支持 game/game.iso、game/游戏名/game.iso 和旧版 game/游戏名/ISO/game.iso 目录结构。  
+  **Bring your own library:** supported layouts include game/game.iso, game/Title/game.iso and the legacy game/Title/ISO/game.iso structure.
+
+> 本项目不附带游戏 ROM、BIOS 或商业游戏素材。请只导入你有权使用的文件。GamePad PS 为独立爱好项目，与 PlayStation、Sony 或其他权利人没有隶属或授权关系。  
+> Game files, BIOS files and commercial game assets are not included. Import only files you are entitled to use. This is an independent project and is not affiliated with or endorsed by PlayStation, Sony, or other rights holders.
+
+## 从基线继续开发 · Continue from the baseline
+
+本仓库保留当前 V0.4.1 的源码基线、运行时、默认配置与构建工具。建议先阅读 [实现计划](IMPLEMENTATION_PLAN.md)、[源码边界](SOURCE_LOCK.md)、[素材导入规则](MATERIALS.md)、[复用盘点](REUSE_INVENTORY.md) 和 [后续迁移说明](NEXT_PACKAGE_MIGRATION.md)。
+
+This repository preserves the V0.4.1 source baseline, runtime, defaults and build tools. Start with the [implementation plan](IMPLEMENTATION_PLAN.md), [source boundaries](SOURCE_LOCK.md), [materials guide](MATERIALS.md), [reuse inventory](REUSE_INVENTORY.md) and [migration notes](NEXT_PACKAGE_MIGRATION.md).
+
+构建命令 / Build command: **bash tools/build_runtime.sh**
+
+V0.4.1 已覆盖关键配置迁移、208 项单元测试及前序核心流程；首次焦点保护的最终端到端日志尚未完成，详见仓库内的阶段验证记录。  
+V0.4.1 includes the verified settings migration, 208 unit tests and earlier core flows. The final end-to-end log for first-focus protection is still outstanding; see the stage validation records in this repository.
+
+## 官网与关联产品 · Website & related products
+
+GamePad PS 暂无独立官网，先复用 [GameFold 官网](https://gamefold.pages.dev)。以下各仓库分别维护独立产品线与基线。  
+GamePad PS does not yet have a dedicated website; it currently uses the [GameFold website](https://gamefold.pages.dev). Each repository below maintains its own product line and baseline.
+
+<div id="product-family"></div>
+
+| 产品线 / Product | 仓库 / Repository | 官网 / Website |
+|---|---|---|
+| GameFold NS | [gamefold-ns-private](https://github.com/lavande16/gamefold-ns-private) | [gamefold.pages.dev](https://gamefold.pages.dev) |
+| GamePad NS | [gamepad-ns-private](https://github.com/lavande16/gamepad-ns-private) | [gamefold.pages.dev](https://gamefold.pages.dev) |
+| GameFold PC | [gamefold-pc-private](https://github.com/lavande16/gamefold-pc-private) | [gamefold.pages.dev](https://gamefold.pages.dev) |
+| GamePad PC | [gamepad-pc-private](https://github.com/lavande16/gamepad-pc-private) | [gamefold.pages.dev](https://gamefold.pages.dev) |
+| GameFold FC | [gamefold-fc-private](https://github.com/lavande16/gamefold-fc-private) | [game-fold.pages.dev](https://game-fold.pages.dev) |
+| GamePad PS | [gamepad-ps-private](https://github.com/lavande16/gamepad-ps-private) | [gamefold.pages.dev](https://gamefold.pages.dev) |
+
+---
+
+<p align="center"><sub>本仓库为私有源码备份。版本号以 Release 与基线记录为准。｜Private source backup; use the Release and baseline records as the version source of truth.</sub></p>
+# GamePad PS
+
 当前用户批准基线：**GamePad PS V0.4.1**（2026-10-21），见 `../CURRENT_GAMEPAD_PS_BASELINE.md`。后续开发从该基线继续，固定归档不得覆盖。
 
 当前已构建并覆盖安装 GamePad PS 0.4.1 / 8，包名固定 `com.gamepad.pspad`。NS 首页、卡带、设置布局、手柄和像素控件已接入；自动装配、自动存读档、分辨率切换和横屏限制通过本轮自动验证，完整人工实玩验收仍待用户确认。
