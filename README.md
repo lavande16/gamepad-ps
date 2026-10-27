@@ -1,8 +1,8 @@
 # GamePad PS
 
 
-> **把 PS2 游戏库，带进随身的 Android 游戏空间。**  
-> Bring your PS2 library into a handheld Android play space.
+> **在 Android 平板上畅玩自己的 PS2 游戏库。**  
+> Play your PS2 library on an Android tablet.
 
 
 <p align="center"><a href="https://gamefold.pages.dev"><img src="gamepad-ps.png" alt="GamePad PS 游戏库界面 / GamePad PS library screenshot" width="88%"></a></p>
@@ -29,8 +29,8 @@
 
 - **整洁的游戏入口：**以卡带式游戏库进入 PS2 游戏，并支持自动装配与自动存档读档流程。  
   **A focused library:** launch from a cartridge-inspired collection with automatic game setup and save/load flow.
-- **横屏掌机布局：**控制与内容围绕横屏握持方式安排，适合随身游玩。  
-  **Landscape handheld play:** controls and content are arranged for a comfortable handheld grip.
+- **横屏平板游戏体验：**游戏内容与控制布局围绕 Android 平板的横屏显示安排，让大屏空间与操作区域更好配合。  
+  **Landscape tablet play:** controls and content are arranged for landscape use on an Android tablet, making room for a comfortable big-screen session.
 - **首次设置简单，之后由你掌控：**提供统一的图像与显示默认值；初始化后保留玩家后续的设置和进度。  
   **Simple defaults, your preferences:** graphics and display defaults are applied during setup, while later changes and progress are preserved.
 - **兼容多种游戏目录：**支持 `game/game.iso`、`game/游戏名/game.iso` 和旧版 `game/游戏名/ISO/game.iso` 结构。  
