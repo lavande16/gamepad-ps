@@ -9,7 +9,7 @@
 <p align="center"><sub>GamePad PS 游戏库截图 · GamePad PS library screenshot</sub></p>
 
 
-<p align="center"><a href="https://gamefold.pages.dev">产品官网 / Official site</a> · <a href="https://github.com/lavande16/gamepad-ps-private/releases/tag/gamepad-ps-v0.4.1-8-baseline">下载 V0.4.1 / Download</a></p>
+<p align="center"><a href="https://gamefold.pages.dev">产品官网 / Official site</a> · <a href="https://github.com/lavande16/gamepad-ps/releases/tag/gamepad-ps-v0.4.1-8-baseline">下载 V0.4.1 / Download</a></p>
 
 
 ## 当前基线 · Current baseline
@@ -21,7 +21,7 @@
 | Android 包名 | **com.gamepad.pspad** |
 | 方向与显示 | 横屏游玩；默认 4× 渲染、LGFS 2×、Stretch 全屏、OSD 关闭 |
 | 存储目录 | **GamePadPS** |
-| 下载 | [GitHub Release：V0.4.1 / 8](https://github.com/lavande16/gamepad-ps-private/releases/tag/gamepad-ps-v0.4.1-8-baseline) |
+| 下载 | [GitHub Release：V0.4.1 / 8](https://github.com/lavande16/gamepad-ps/releases/tag/gamepad-ps-v0.4.1-8-baseline) |
 
 
 ## 为玩家准备的体验 · Made for players
@@ -44,10 +44,10 @@
 ## 从基线继续开发 · Continue from the baseline
 
 
-本仓库保留 V0.4.1 源码基线、运行时、默认配置与构建工具。建议从 [实现计划](IMPLEMENTATION_PLAN.md)、[源码边界](SOURCE_LOCK.md)、[素材导入规则](MATERIALS.md)、[复用盘点](REUSE_INVENTORY.md) 和 [后续迁移说明](NEXT_PACKAGE_MIGRATION.md) 开始。APK 与版本号以 [V0.4.1 Release](https://github.com/lavande16/gamepad-ps-private/releases/tag/gamepad-ps-v0.4.1-8-baseline) 为准。
+本仓库保留 V0.4.1 源码基线、运行时、默认配置与构建工具。建议从 [实现计划](IMPLEMENTATION_PLAN.md)、[源码边界](SOURCE_LOCK.md)、[素材导入规则](MATERIALS.md)、[复用盘点](REUSE_INVENTORY.md) 和 [后续迁移说明](NEXT_PACKAGE_MIGRATION.md) 开始。APK 与版本号以 [V0.4.1 Release](https://github.com/lavande16/gamepad-ps/releases/tag/gamepad-ps-v0.4.1-8-baseline) 为准。
 
 
-This repository preserves the V0.4.1 source baseline, runtime, defaults and build tools. Start with the [implementation plan](IMPLEMENTATION_PLAN.md), [source boundaries](SOURCE_LOCK.md), [materials guide](MATERIALS.md), [reuse inventory](REUSE_INVENTORY.md) and [migration notes](NEXT_PACKAGE_MIGRATION.md). The [V0.4.1 Release](https://github.com/lavande16/gamepad-ps-private/releases/tag/gamepad-ps-v0.4.1-8-baseline) is the version source of truth.
+This repository preserves the V0.4.1 source baseline, runtime, defaults and build tools. Start with the [implementation plan](IMPLEMENTATION_PLAN.md), [source boundaries](SOURCE_LOCK.md), [materials guide](MATERIALS.md), [reuse inventory](REUSE_INVENTORY.md) and [migration notes](NEXT_PACKAGE_MIGRATION.md). The [V0.4.1 Release](https://github.com/lavande16/gamepad-ps/releases/tag/gamepad-ps-v0.4.1-8-baseline) is the version source of truth.
 
 ## GameFold / GamePad 产品矩阵 · Product family
 
@@ -56,9 +56,9 @@ GameFold is for foldable phones; GamePad is for Android tablets.
 
 | 产品线 / Product | 仓库 / Repository | 官网 / Website | 描述 / Description |
 |---|---|---|---|
-| GameFold NS | [gamefold-ns-private](https://github.com/lavande16/gamefold-ns-private) | [GameFold](https://gamefold.pages.dev) | 在折叠屏手机上运行 Switch 游戏。<br>Run Switch games on a foldable phone. |
-| GameFold PC | [gamefold-pc-private](https://github.com/lavande16/gamefold-pc-private) | [GameFold](https://gamefold.pages.dev) | 在折叠屏手机上运行 PC 游戏。<br>Run PC games on a foldable phone. |
-| GameFold FC | [gamefold-fc-private](https://github.com/lavande16/gamefold-fc-private) | [GameFold FC](https://game-fold.pages.dev) | 在折叠屏手机上运行 FC 游戏。<br>Run FC games on a foldable phone. |
-| GamePad NS | [gamepad-ns-private](https://github.com/lavande16/gamepad-ns-private) | [GameFold](https://gamefold.pages.dev) | 在 Android 平板上运行 Switch 游戏。<br>Run Switch games on an Android tablet. |
-| GamePad PC | [gamepad-pc-private](https://github.com/lavande16/gamepad-pc-private) | [GameFold](https://gamefold.pages.dev) | 在 Android 平板上整理并启动本地 PC 游戏。<br>Organize and launch local PC games on an Android tablet. |
-| GamePad PS | [gamepad-ps-private](https://github.com/lavande16/gamepad-ps-private) | [GameFold](https://gamefold.pages.dev) | 在 Android 平板上畅玩自己的 PS2 游戏库。<br>Play your PS2 library on an Android tablet. |
+| GameFold NS | [gamefold-ns](https://github.com/lavande16/gamefold-ns) | [GameFold](https://gamefold.pages.dev) | 在折叠屏手机上运行 Switch 游戏。<br>Run Switch games on a foldable phone. |
+| GameFold PC | [gamefold-pc](https://github.com/lavande16/gamefold-pc) | [GameFold](https://gamefold.pages.dev) | 在折叠屏手机上运行 PC 游戏。<br>Run PC games on a foldable phone. |
+| GameFold FC | [gamefold-fc](https://github.com/lavande16/gamefold-fc) | [GameFold FC](https://game-fold.pages.dev) | 在折叠屏手机上运行 FC 游戏。<br>Run FC games on a foldable phone. |
+| GamePad NS | [gamepad-ns](https://github.com/lavande16/gamepad-ns) | [GameFold](https://gamefold.pages.dev) | 在 Android 平板上运行 Switch 游戏。<br>Run Switch games on an Android tablet. |
+| GamePad PC | [gamepad-pc](https://github.com/lavande16/gamepad-pc) | [GameFold](https://gamefold.pages.dev) | 在 Android 平板上整理并启动本地 PC 游戏。<br>Organize and launch local PC games on an Android tablet. |
+| GamePad PS | [gamepad-ps](https://github.com/lavande16/gamepad-ps) | [GameFold](https://gamefold.pages.dev) | 在 Android 平板上畅玩自己的 PS2 游戏库。<br>Play your PS2 library on an Android tablet. |
